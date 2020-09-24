@@ -122,3 +122,73 @@ de dos números dados
 17 Escribir un programa que nos diga si un número dado es primo (no es
 divisible por ninguno otro número que no sea él mismo o la unidad)
 
+--------- 23 09 2020
+
+
+Patrones con Loop anidados
+Dibujar los siguientes patrones ocupando document.write, para rellenar los espacios vacíos se debe imprimir un espacio vacío.
+
+Cuadrado lleno:
+
+*****
+*****
+*****
+*****
+*****
+Cuadrado hueco:
+
+*****
+*   *
+*   *
+*   *
+*****
+Tablero de Ajedrez:
+
+* * * * * * * *
+ * * * * * * * 
+* * * * * * * *
+ * * * * * * * 
+* * * * * * * *
+ * * * * * * * 
+* * * * * * * *
+ * * * * * * * 
+
+Cuadrado hueco:
+
+*****
+*   *
+*   *
+*   *
+*****
+Piramide Izquierda:
+
+*     
+**    
+***   
+****  
+***** 
+Pirámide centrada
+
+*
+***
+*****
+*******
+*********
+Pirámide invertida
+
+*********
+*******
+*****
+***
+*
+Diamante:
+
+*
+***
+*****
+*******
+*********
+*******
+*****
+***
+*
