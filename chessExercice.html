@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            Patrones con Loop anidados
+            Dibujar los siguientes patrones ocupando document.write, para rellenar los espacios vacíos se debe imprimir un espacio vacío.
+
+            Cuadrado lleno:
+
+            *****
+            *****
+            *****
+            *****
+            *****
+            Cuadrado hueco:
+
+            *****
+            *   *
+            *   *
+            *   *
+            *****
+            Tablero de Ajedrez:
+
+            * * * * * * * *
+             * * * * * * * 
+            * * * * * * * *
+             * * * * * * * 
+            * * * * * * * *
+             * * * * * * * 
+            * * * * * * * *
+             * * * * * * *
+            
+            Piramide Izquierda:
+
+            *     
+            **    
+            ***   
+            ****  
+            ***** 
+            Pirámide centrada
+
+            *
+            ***
+            *****
+            *******
+            *********
+            Pirámide invertida
+
+            *********
+            *******
+            *****
+            ***
+            *
+            Diamante:
+
+            *
+            ***
+            *****
+            *******
+            *********
+            *******
+            *****
+            ***
+            *
+
+        */
+
+        function filledSqueare(lenght){
+            for(var i=0; i<lenght; i++){
+                document.write("****<br>")
+            }
+        }
+
+        var lenght = 5
+        filledSqueare(lenght)
+
+       /*  function emptySqueare(rows, columns){
+            for(var i=0; i<columns; i++){
+                    
+                for(var j=0; j<rows; j++){
+
+                }
+            }
+        } */
+        document.write("<br>");
+        document.write("Chess Exercice");
+        document.write("<br>");
+        ajedrez(20,10)
+        function ajedrez(rows, columns){
+            for(var i=0; i<columns-1; i++){
+                for(var j=0; j<rows-1; j++){
+                    if (i % 2 ==0){
+                        if(j % 2 == 0){
+                            document.write("*");
+                        }else{
+                            document.write(".");
+                        }
+                    }
+                    if (i % 2 !=0){
+                        if(j % 2 != 0){
+                            document.write("*");
+                        }else{
+                            document.write(".");
+                        }
+                    }
+                }
+                document.write("<br>")
+            }
+        }
+    </script>
+</body>
+</html>
