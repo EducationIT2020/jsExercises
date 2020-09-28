@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+
+    </ul>
+    <script>
+    /*
+        lista de super en donde un prompt aparezca hasta que uno ingrese la palabra fin, todo lo demás que se ingrese será mostrado en la la pagina con un LIST
+    */
+    var list = document.getElementById('list');
+
+    do{
+        var element = prompt("ingrese un articulo");
+        if(element != "fin"){
+            var item = document.createElement('li');
+            list.appendChild(item);
+            item.textContent = element;
+        }
+    }while(element != "fin" )
+
+    
+    </script>
+</body>
+</html>
