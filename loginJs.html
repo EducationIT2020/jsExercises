@@ -1,0 +1,57 @@
+<!--crear un form en donde obtengamos nombre, apellido y fecha de nacimiento de una persona y tengamos dos botones un login y un register, el create almacena esos datos en un local storage el login valida si esos datos ya estan almacenados, si lo estan saluda a la persona, si no estan pide que registre en la pagina utilicemos funciones para validar los campos-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Nombre y Apellido
+            <input type="text" id="name" name="name">
+        </label>
+        <label> Fecha de Nacimiento
+            <input type="text" id="birthday" name="bithday">
+        </label>
+        <label>login
+            <input type="submit" id="login" onclick="validateData()">
+        </label>
+        <label>register
+            <input type="submit" id="register" onclick="saveData()">
+        </label>
+    </form>
+
+    <script>
+        /*  function Persona (nombre, edad){
+            this.nombre = nombre,
+            this.edad = edad,
+
+            this.saludar = function(){
+                console.log('hola');
+            }
+        }
+        var pers = new Persona('mario', 24)
+        var pers2 = new Persona('mo', 29)
+        */
+
+        var nameHtml = document.getElementById('name');
+        var birthdayHtml = document.getElementById('birthday');
+
+        var persona ={
+            "name" : nameHtml,
+            "birthday": birthdayHtml
+        }
+        function saveData(){
+            var key = nameHtml.value + birthday.value;
+            localStorage.setItem(key, persona);
+        }
+        function validateData(){
+            var saveData = localStorage.getItem(key);
+            if(saveData){}
+        }
+    </script>
+</body>
+</html>
