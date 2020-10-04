@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="cambiarColor">Cambiar color</button>
+    <script>
+        /* Crear una funcion donde con un numero aleatorio y mediante el click de un boton cambiemos el color de fondo
+         */
+
+        var btnCambiarColor = document.getElementById('cambiarColor');
+
+        btnCambiarColor.addEventListener("click", function(e){
+            var red = Math.random()*255;
+            var blue = Math.random()*255;
+            var green = Math.random()*255;
+
+            document.body.style.backgroundColor ="rgb("+red+","+green+","+blue+")";
+
+
+        });
+    </script>
+</body>
+</html>

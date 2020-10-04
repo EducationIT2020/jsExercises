@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fotos random</h1>
+    <button id ="btn_photo">Haga click aquí para cargar una foto</button>
+
+    <script>
+        /* Usando un boton vamos a mostrar en un área una foto aleatoria
+         */
+
+        var btn_photo = document.getElementById('btn_photo');
+        var responeUrls = "";
+        var request = new XMLHttpRequest();
+
+        request.open("GET", "https://jsonplaceholder.typicode.com/photos");
+        request.send();
+        request.onload = () =>{
+            if(request.status == 200){
+                var photoList = JSON.parse(request.response);
+                var randomPhoto = Math.floor(Math.random()* 5 ) + 1;
+
+                for(let i = 0; i < photoList.length; i++){
+                    if(photoList[i].id == randomPhoto){
+                        responseUrl = photoList[i].url;
+                        break;
+                    }
+                }
+                btn_photo.addEventListener("click", (e)=>{
+                    var htmlImage = document.createElement('img');
+                    htmlImage.src = responseUrl;
+                    document.body.appendChild(htmlImage);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
