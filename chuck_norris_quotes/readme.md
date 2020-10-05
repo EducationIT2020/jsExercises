@@ -14,6 +14,9 @@ crear la estructura inicial del proyecto
  		category.js
  		freetext.js
  		randomgif.js
+		
+		
+		
 US002 - Patricio
 index.html
 	- titulo, footer, subtitulo e imagen de chuck
@@ -21,16 +24,24 @@ index.html
 	- redireccion de cada boton a las distintas paginas de busqueda
 	- armado de css
 	- armado de js con los gif
+	
+	
+	
 US003 - Juan
 random.html
 	- titulo, footer, subtitulo e imagen de chuck
 	- boton que busca y carga una frase aleatoria
 	- agregar gif abajo del boton
+	
+	
+	
 US004 - Facundo
 category.html
 	- titulo, footer, subtitulo e imagen de chuck
 	- boton search que toma el valor seleccionado del combo box categorias y carga 3 frases 	
 	- agregar gif abajo del boton
+	
+	
 US005
 freetext.html
     - titulo, footer, subtitulo e imagen de chuck
