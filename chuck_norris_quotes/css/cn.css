@@ -1,0 +1,12 @@
+/* RANDOM PAGE */
+.textArea{
+    width: 50%;
+    height: 200px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    float: right;
+}
+.headerImg{
+    float: right;
+}
