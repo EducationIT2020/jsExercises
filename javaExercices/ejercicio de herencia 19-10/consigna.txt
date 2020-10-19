@@ -1,0 +1,9 @@
+Sistema de gestion de alumnos y profesores
+Nombre
+Apellido
+Id
+Edad
+del profesor tendremos la materia que da
+de los alumnos la materia que cursa y la nota
+los ubicaremos por aula donde cada aula tendra un profesor y varios alumnos
+queremos ingresar un profesor y alumnos
